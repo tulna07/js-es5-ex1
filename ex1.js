@@ -7,9 +7,9 @@
 // Công thức tính lương (1): lương 1 ngày * số ngày làm
 
 // -------------- SOLUTION --------------
-// Input:   - Lương 1 ngày: 100.000
+// Input:   - Lương 1 ngày: 100.000 VND
 //          - Số ngày làm do người dùng nhập
-// Process: 1. Tạo hằng salaryPerDay gán giá trị 100.000
+// Process: 1. Tạo hằng salaryPerDay gán giá trị 100000
 //          2. Tạo biến numberOfWorkingDay gán giá trị do
 //             người dùng nhập vào
 //          3. Tạo biến workerSalary lưu giữ kết quả được tính từ
@@ -17,6 +17,17 @@
 //          4. In kết quả được tính từ bước 3 ở trên
 //             ra console
 // Output: lương công nhân được tính từ công thức (1)
+const salaryPerDay = 100000;
+var numberOfWorkingDay = 30,
+  workerSalary = salaryPerDay * numberOfWorkingDay;
+
+// Additional step for formatting currency
+const currencyFormat = new Intl.NumberFormat("vn-VN");
+console.log(
+  `Salary of a worker with ${numberOfWorkingDay} day(s) of working: ${currencyFormat.format(
+    workerSalary
+  )} VND`
+);
 
 /**
  * 🎃 Bài 2: Tính giá trị trung bình
