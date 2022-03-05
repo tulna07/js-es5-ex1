@@ -43,9 +43,19 @@ console.log(
 //             nhập vào
 //          2. Tạo biến average lưu giữ kết quả được tính từ
 //             công thức tính trung bình cộng 5 số
-//          3. In kết quả được tính từ bước 3 ở trên
+//          3. In kết quả được tính từ bước 2 ở trên
 //             ra console
 // Output: trung bình cộng của 5 số thực
+var realNumber1 = 1.1,
+  realNumber2 = 2.1,
+  realNumber3 = 3.1,
+  realNumber4 = 4.1,
+  realNumber5 = 5.1;
+var average =
+  (realNumber1 + realNumber2 + realNumber3 + realNumber4 + realNumber5) / 5;
+console.log(
+  `Average of 5 real numbers ${realNumber1}, ${realNumber2}, ${realNumber3}, ${realNumber4}, ${realNumber5}: ${average}`
+);
 
 /**
  * 🎃 Bài 3: Quy đổi tiền
