@@ -24,7 +24,7 @@ var numberOfWorkingDay = 30,
 // Additional step for formatting currency
 const currencyFormat = new Intl.NumberFormat("vn-VN");
 console.log(
-  `Salary of a worker with ${numberOfWorkingDay} day(s) of working: ${currencyFormat.format(
+  `Answer 1: Salary of a worker with ${numberOfWorkingDay} day(s) of working: ${currencyFormat.format(
     workerSalary
   )} VND`
 );
