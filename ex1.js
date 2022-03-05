@@ -1,3 +1,6 @@
+// Additional step for formatting currency
+const currencyFormat = new Intl.NumberFormat("vn-VN");
+
 /**
  * 🎃 Bài 1: Tính tiền lương nhân viên
  */
@@ -21,8 +24,6 @@ const salaryPerDay = 100000;
 var numberOfWorkingDay = 30,
   workerSalary = salaryPerDay * numberOfWorkingDay;
 
-// Additional step for formatting currency
-const currencyFormat = new Intl.NumberFormat("vn-VN");
 console.log(
   `Answer 1: Salary of a worker with ${numberOfWorkingDay} day(s) of working: ${currencyFormat.format(
     workerSalary
@@ -54,7 +55,7 @@ var realNumber1 = 1.1,
 var average =
   (realNumber1 + realNumber2 + realNumber3 + realNumber4 + realNumber5) / 5;
 console.log(
-  `Average of 5 real numbers ${realNumber1}, ${realNumber2}, ${realNumber3}, ${realNumber4}, ${realNumber5}: ${average}`
+  `Answer 2: Average of 5 real numbers ${realNumber1}, ${realNumber2}, ${realNumber3}, ${realNumber4}, ${realNumber5}: ${average}`
 );
 
 /**
@@ -74,6 +75,13 @@ console.log(
 //          4. In kết quả được tính từ bước 3 ở trên
 //             ra console
 // Output: tiền vnd sau khi đổi từ usd
+const vnd_per_usd = 23500;
+var usd = 100,
+  vnd = usd * vnd_per_usd;
+
+console.log(`Answer 3: ${usd} USD = ${currencyFormat.format(vnd)} VND`);
+
+// Additional step for formatting currency
 
 /**
  * 🎃 Bài 4: Tính diện tích, chu vi hình chữ nhật
