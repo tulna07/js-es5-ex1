@@ -81,8 +81,6 @@ var usd = 100,
 
 console.log(`Answer 3: ${usd} USD = ${currencyFormat.format(vnd)} VND`);
 
-// Additional step for formatting currency
-
 /**
  * 🎃 Bài 4: Tính diện tích, chu vi hình chữ nhật
  */
@@ -101,6 +99,14 @@ console.log(`Answer 3: ${usd} USD = ${currencyFormat.format(vnd)} VND`);
 //          4. In kết quả được tính từ bước 2 và 3 ở trên
 //             ra console
 // Output: Chu vi, diện tích của HCN
+var rectWidth = 10,
+  rectLength = 20;
+
+var rectPerimeter = (rectWidth + rectLength) * 2,
+  rectArea = rectWidth * rectLength;
+
+console.log(`Answer 4: - Perimeter of Rectangle: ${rectPerimeter}
+          - Area of Rectangle: ${rectArea}`);
 
 /**
  * 🎃 Bài 5: Tính tổng 2 ký số
