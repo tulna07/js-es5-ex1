@@ -121,8 +121,14 @@ console.log(`Answer 4: - Perimeter of Rectangle: ${rectPerimeter}
 //             nhập vào
 //          2. Tạo biến unitPlace giữ giá trị hàng đơn vị được tính
 //             bằng công thức numberWith2Digits % 10
-//          3. Tạo biến tenPlace giữ giá trị hàng đơn chục được tính
+//          3. Tạo biến tenPlace giữ giá trị hàng chục được tính
 //             bằng công thức Math.floor(numberWith2Digits / 10)
 //          4. Tạo biến total lưu giữ kết quả là tổng của unitPlace + tenPlace
 //          5. In kết quả được tính từ bước 4 ở trên ra console
 // Output: Tổng 2 ký số của số có 2 chữ số
+var numberWith2Digits = 55,
+  unitPlace = numberWith2Digits % 10,
+  tenPlace = Math.floor(numberWith2Digits / 10),
+  total = unitPlace + tenPlace;
+
+console.log(`Answer 5: Total of 2 digits ${numberWith2Digits}: ${total}`);
