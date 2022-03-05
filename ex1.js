@@ -117,7 +117,7 @@ console.log(`Answer 4: - Perimeter of Rectangle: ${rectPerimeter}
 
 // -------------- SOLUTION --------------
 // Input: - Nhập vào 1 số có 2 chữ số
-// Process: 1. Tạo ra biến numberWith2Digits được gán giá trị được
+// Process: 1. Tạo ra biến numberWith2Digits gán giá trị được
 //             nhập vào
 //          2. Tạo biến unitPlace giữ giá trị hàng đơn vị được tính
 //             bằng công thức numberWith2Digits % 10
